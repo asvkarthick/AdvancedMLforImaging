@@ -496,7 +496,7 @@ class Deterministic_ViT(tf.keras.Model):
     def __init__(
         self,
         image_size=32,
-        num_layers=6,
+        num_layers=12,
         kernel_size=3,
         kernel_num=128,
         kernel_stride=1,
@@ -708,7 +708,7 @@ def remove_high_frequency(images, cutoff=0.1):
 # Main function with added options for scattering attacks
 def main_function(
     image_size=224,
-    num_layers=12,
+    num_layers=6,
     num_classes=8,
     embed_dim=256,
     num_heads=4,
